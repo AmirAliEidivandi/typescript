@@ -37,3 +37,22 @@ console.log(coordinates);
 
 // 2) When we declare a variable on one line
 // and initalizate it later
+let words = ["red", "green", "blue"];
+// let foundWords: boolean;
+let foundWords = false;
+
+for (let i = 0; i < words.length; i++) {
+    if (words[1] === "green") {
+        foundWords = true;
+    }
+}
+
+// 3) Variables whose type cannot be inferred correctly
+let numbers = [-10, -2, 12];
+let numberAboveZero: boolean | number = false;
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 0) {
+        numberAboveZero = numbers[i];
+    }
+}
