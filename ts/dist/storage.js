@@ -1,40 +1,38 @@
 "use strict";
-var FileStorage = /** @class */ (function () {
-    function FileStorage(name) {
+class FileStorage {
+    constructor(name) {
         this.name = name;
     }
     /**
      * save
      */
-    FileStorage.prototype.save = function () {
+    save() {
         return true;
-    };
+    }
     /**
      * get
      */
-    FileStorage.prototype.get = function () {
+    get() {
         return this.name;
-    };
-    return FileStorage;
-}());
-var DatabaseStorage = /** @class */ (function () {
-    function DatabaseStorage(name) {
+    }
+}
+class DatabaseStorage {
+    constructor(name) {
         this.name = name;
     }
     /**
      * save
      */
-    DatabaseStorage.prototype.save = function () {
+    save() {
         return true;
-    };
+    }
     /**
      * get
      */
-    DatabaseStorage.prototype.get = function () {
+    get() {
         return this.name;
-    };
-    return DatabaseStorage;
-}());
+    }
+}
 function saveFile(storageHandler) {
     return true;
 }
